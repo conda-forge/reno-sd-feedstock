@@ -1,6 +1,6 @@
 {% set name = "reno-sd" %}
 {% set python_min = "3.11" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/reno_sd-{{ version }}.tar.gz
-  sha256: dbb9ee1e65c2de16d7b56c968a6de7c52ec636f05bf32f948f2e6b3a284eb16f
+  sha256: 282d31f8bde857ccaf2dc1a4c6ec09b3952e4fcb141a404c44b0d46cd31bafa4
 
 build:
   noarch: python
