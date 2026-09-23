@@ -1,14 +1,14 @@
 {% set name = "reno-sd" %}
 {% set python_min = "3.12" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/reno_sd-{{ version }}.tar.gz
-  sha256: ce2feadc305dd32d5baa3a4058a60c6fe10720ed3b5213f8c65bb324a266b5a3
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/reno_sd-{{ version }}.tar.gz
+  sha256: 900cc1ddaad30e78849c7545cbd5f2e23f85d5264fe692aaf9f43a0cb3762419
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - numpy
     - pandas
     - xarray
-    - panel 
+    - panel
     - pymc >=6
     - matplotlib-base
     - selenium
